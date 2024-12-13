@@ -25,7 +25,7 @@ class Street extends Model
 
     protected static function getFtsText(string $text): ?string
     {
-        if (!preg_match_all('{[0-9a-z]+}uis', $text, $matches)) {
+        if (!preg_match_all('{[0-9а-яА-ЯёЁa-z]+}uis', $text, $matches)) {
             return null;
         }
 
