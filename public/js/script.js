@@ -8,6 +8,8 @@
     const url = new URL(form.getAttribute("action"), win.location.origin);
     const rxKey = new RegExp("^\\w+$");
 
+	form.querySelector(".form-query").addEventListener("blur", ({"target": node,}) => node.focus());
+
     form.addEventListener("submit", evt => {
         evt.preventDefault();
         [resultsTable, errorMessage,].forEach(node => node.classList.add("hidden"));
