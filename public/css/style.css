@@ -4,11 +4,25 @@
 .both {
     clear: both;
 }
+#form {
+    margin: 5px;
+    padding: 5px;
+}
+#form input[name="q"] {
+    width: 50%;
+}
 .table {
     width: 100%;
 }
-table td, table th {
+.table td, .table th {
     padding: 2px;
     margin: 2px;
-    border: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+.message {
+    display: block;
+    text-align: center;
+}
+.overlay {
+    padding: 2% 5%;
 }

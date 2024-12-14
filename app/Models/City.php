@@ -7,10 +7,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\{BelongsTo, HasMany};
 use App\Models\{Region, Street};
 
+/**
+* Город
+*/
 class City extends Model
 {
     use HasFactory;
 
+    /**
+    * @var string $tableName
+    */
     protected $tableName = 'cities';
 
     public function region(): BelongsTo

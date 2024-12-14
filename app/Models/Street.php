@@ -7,10 +7,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use App\Models\{Region, City};
 
+/**
+* Улица
+*/
 class Street extends Model
 {
     use HasFactory;
 
+    /**
+    * @var string $tableName
+    */
     protected $tableName = 'streets';
 
     public function city(): BelongsTo
@@ -23,8 +29,18 @@ class Street extends Model
         return $this->belongsTo(Region::class, 'region_name', 'name');
     }
 
-    protected static function getFtsText(string $text): ?string
+    /**
+    * Запрос FTS из строки
+    *
+    * @param ?string $text - входной текст
+    *
+    * @return ?string - запрос в формате FTS
+    */
+    protected static function getFtsText(?string $text = null): ?string
     {
+        if (is_null($text)) {
+            return null;
+        }
         if (!preg_match_all('{[0-9а-яА-ЯёЁa-z]+}uis', $text, $matches)) {
             return null;
         }
@@ -37,7 +53,12 @@ class Street extends Model
         );
     }
 
-    public static function searchByText(string $text)
+    /**
+    * Поиск FTS
+    *
+    * @param ?string $text - входной текст
+    */
+    public static function searchByText(?string $text = null)
     {
         $searchText = static::getFtsText($text);
 

@@ -7,10 +7,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\{City, Street};
 
+/**
+* Регион
+*/
 class Region extends Model
 {
     use HasFactory;
 
+    /**
+    * @var string $tableName
+    */
     protected $tableName = 'regions';
 
     public function street(): HasMany

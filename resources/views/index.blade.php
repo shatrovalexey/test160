@@ -23,7 +23,8 @@
                     <input type="submit" value="&rarr;">
                 </label>
             </form>
-            <table class="table">
+			<div class="message hidden"></div>
+            <table class="table hidden">
                 <thead>
                     <tr>
                         <th>Регион</th>
