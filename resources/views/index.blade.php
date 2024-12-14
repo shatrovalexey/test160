@@ -14,14 +14,8 @@
     <body class="font-sans antialiased">
         <div class="overlay">
             <form action="/search" method="get" id="form">
-                <label>
-                    <span>адрес</span>
-                    <input name="q" required>
-                </label>
-                <label>
-                    <span>найти</span>
-                    <input type="submit" value="&rarr;">
-                </label>
+				<input name="q" required autofocus type="search" placeholder="адрес" class="form-query">
+				<input type="submit" value="&rarr;" class="form-submit">
             </form>
 			<div class="message hidden"></div>
             <table class="table hidden">
