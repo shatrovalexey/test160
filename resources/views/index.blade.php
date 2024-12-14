@@ -14,10 +14,10 @@
     <body class="font-sans antialiased">
         <div class="overlay">
             <form action="/search" method="get" id="form">
-				<input name="q" required autofocus type="search" placeholder="адрес" class="form-query">
-				<input type="submit" value="&rarr;" class="form-submit">
+                <input name="q" required autofocus type="search" placeholder="адрес" class="form-query">
+                <input type="submit" value="&rarr;" class="form-submit">
             </form>
-			<div class="message hidden"></div>
+            <div class="message hidden"></div>
             <table class="table hidden">
                 <thead>
                     <tr>

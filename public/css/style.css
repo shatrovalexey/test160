@@ -6,31 +6,31 @@
 }
 .overlay {
     padding: 2% 5%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 30px 30px 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 30px 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 #form {
-	display: grid;
-	grid-template-columns: 1fr 40px;
-	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 #form .form-query {
-	width: 100%;
+    width: 100%;
 }
 #form .form-submit {
-	grid-area: 1 / 2 / 2 / 3;
-	cursor: pointer;
+    grid-area: 1 / 2 / 2 / 3;
+    cursor: pointer;
 }
 .table {
-	border-spacing: 10px;
-	border-collapse: separate;
+    border-spacing: 10px;
+    border-collapse: separate;
     width: 100%;
-	grid-area: 2 / 1 / 3 / 2;
+    grid-area: 2 / 1 / 3 / 2;
 }
 .table td, .table th {
     padding: 2px;
@@ -38,9 +38,9 @@
     border-bottom: 1px gray solid;
 }
 .table thead {
-	background-color: #F0F0F0;
+    background-color: #F0F0F0;
 }
 .message {
     text-align: center;
-	grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 2;
 }
