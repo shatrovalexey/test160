@@ -2,20 +2,15 @@
 
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Поиск</title>
-
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
+        <meta charset="utf-8">
         <link href="/css/style.css" rel="stylesheet"/>
     </head>
     <body class="font-sans antialiased">
         <div class="overlay">
             <form action="/search" method="get" id="form">
-                <input name="q" required autofocus type="search" placeholder="адрес" class="form-query">
-                <input type="submit" value="&rarr;" class="form-submit">
+                <input name="q" required autofocus autocomplete type="search" placeholder="адрес" class="form-query" title="адрес">
+                <input type="submit" value="&rarr;" class="form-submit" title="найти">
             </form>
             <div class="message hidden"></div>
             <table class="table hidden">
